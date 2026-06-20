@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhanu Teja Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#home" class="logo">BHANU</a>
+
+        <nav class="navbar" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#contact" class="hire-btn">Hire Me</a>
+        </nav>
+
+        <div class="menu" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content reveal">
+            <h1>Hey, I'm Bhanu Teja<br>Bourubilli</h1>
+            <h2><span class="typing-role"></span></h2>
+            <p>Transforming Ideas into Seamless and Visually Stunning Web Solutions</p>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">CONTACT</a>
+                <a href="assets/bhanu_tejaa_resume.pdf" target="_blank" class="btn btn-dark">RESUME</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/bhanu1908hu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image reveal">
+            <img src="images/Bhanu (5).jpeg" alt="Bhanu Teja Photo" />
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <h2 class="section-heading reveal">Technical Proficiency</h2>
+
+        <div class="skills-wrapper">
+            <div class="skill-tabs reveal">
+                <div class="skill-tab active" data-type="frontend">
+                    <div class="tab-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Frontend</h3>
+                </div>
+
+                <div class="skill-tab" data-type="backend">
+                    <div class="tab-icon"><i class="fa-solid fa-gear"></i></div>
+                    <h3>Backend</h3>
+                </div>
+
+                <div class="skill-tab" data-type="tools">
+                    <div class="tab-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Tools</h3>
+                </div>
+            </div>
+
+            <div class="skill-details reveal">
+                <h3>Frontend</h3>
+
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span><i class="fa-brands fa-html5"></i> HTML and CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="bar" style="--w:85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="bar" style="--w:75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span><i class="fa-solid fa-mobile-screen"></i> Responsive Design</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="bar" style="--w:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-top">
+                        <span><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="bar" style="--w:75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience-section" id="experience">
+        <h2 class="experience-title reveal">Work Experience</h2>
+
+        <div class="experience-wrapper">
+            <div class="experience-card reveal">
+                <h3>Python Full Stack Intern</h3>
+
+                <div class="exp-tags">
+                    <span>Codegnan IT Solutions</span>
+                    <span>Oct 2025 - May 2026</span>
+                </div>
+
+                <ul>
+                    <li>Worked on web applications using Python, Flask, HTML, CSS and JavaScript.</li>
+                    <li>Developed responsive pages and integrated backend routes with database.</li>
+                    <li>Created CRUD operations, authentication flows and user-friendly dashboards.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card reveal">
+                <h3>Web Developer Intern</h3>
+
+                <div class="exp-tags">
+                    <span>Dr. Pallam Setti Center for Research and Technology</span>
+                    <span>Oct 2024 - Jan 2025</span>
+                </div>
+
+                <ul>
+                    <li>Built responsive web pages with clean and modern UI design.</li>
+                    <li>Improved frontend layouts using HTML, CSS, JavaScript and Bootstrap.</li>
+                    <li>Collaborated on website updates, testing and performance improvements.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title reveal">Projects</h2>
+
+        <div class="project-grid">
+            <div class="project-card reveal">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>SmartCart</h3>
+                <p>E-commerce web application with login, cart, payment, orders and admin dashboard.
+                    
+                </p>
+            </div>
+
+            <div class="project-card reveal">
+                <i class="fa-solid fa-list-check"></i>
+                <h3>Team Task Manager</h3>
+                <p>Role-based task management system for admins and team members.</p>
+            </div>
+
+            <div class="project-card reveal">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Cyber Attack Detection</h3>
+                <p>Machine learning project for detecting cyber attacks using classification models.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="title reveal">Contact Me</h2>
+
+        <div class="contact-box reveal">
+            <p><i class="fa-solid fa-phone"></i> +918522887435</p>
+            <p><i class="fa-solid fa-envelope"></i> bhanutejabbb@gmail.com</p>
+            <p><i class="fa-brands fa-github"></i> github.com/bhanu1908hu</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Bhanu Teja Bourubilli | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
